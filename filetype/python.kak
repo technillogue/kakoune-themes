@@ -28,7 +28,7 @@ hook -group python-highlight global WinSetOption filetype=python %{
     hook -once -always window WinSetOption filetype=.* %{ remove-highlighter window/python }
 }
 
-provide-module python %§
+provide-module python -override  %§
 
 # Highlighters & Completion
 # ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
